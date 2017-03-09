@@ -1,0 +1,27 @@
+/*global process, __dirname*/
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+
+const server_port = process.env.PORT || 8080;
+const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+const app = express();
+
+app.use('/js', express.static('public/js'));
+app.use('/css', express.static('public/css'));
+app.use('/img', express.static('public/img'));
+
+app.use(bodyParser.json({limit: 1024 * 1024 * 20})); // for parsing application/json 20MB
+app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
+
+app.use(bodyParser.json());
+
+
+app.get('/', function (req, res) {
+	res.sendFile(path.join(__dirname, 'backend/index.html'));
+});
+
+
+app.listen(server_port, server_ip_address, function () {
+	console.log( 'Listening on ' + server_ip_address + ', server_port ' + server_port )
+});

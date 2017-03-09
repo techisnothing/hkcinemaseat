@@ -1,0 +1,43 @@
+{
+  "name": "hkcinemaseat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app --harmony-destructing",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/belloworld/hkcinemaseat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/belloworld/hkcinemaseat#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "eslint": "^3.17.1",
+    "eslint-plugin-flowtype": "^2.30.3",
+    "flow-bin": "^0.41.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-util": "^3.0.8",
+    "livereload": "^0.6.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
