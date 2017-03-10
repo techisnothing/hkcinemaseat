@@ -2,3 +2,22 @@
   margin: 0;
   padding: 0;
 }
+.cinemaList {
+  margin: 0 0 8px 0;
+}
+.background {
+  background-image: url("cinema_background.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.background:after {
+  position: absolute;
+  display: block;
+  background: #FFF;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .93;
+}

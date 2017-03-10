@@ -1,13 +1,36 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>index</title>
-		<link href="/css/index.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div id="app">
-			Hello World
-		</div>
-		<script src="js/index.js"></script>
-	</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="https://unpkg.com/vue"></script>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="app">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">
+                            {{header}}
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <h2>戲院列表</h2>
+                <div class="col-md-12" v-for="cinemaByRegion in cinemaList">
+                    <h3 class="header">
+                        {{cinemaByRegion.region}}
+                    </h3>
+                    <div class="col-md-3 cinemaList" v-for="cinema in cinemaByRegion.list">
+                        <a class="link" href="#">{{cinema}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--         <div class="background">
+
+        </div> -->
+    </body>
+    <script src="./js/index.js"></script>
 </html>
