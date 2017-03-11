@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app --harmony-destructing",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "vue": "^2.2.2"
   },
   "devDependencies": {
     "babel": "^6.23.0",
