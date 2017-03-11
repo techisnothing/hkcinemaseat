@@ -57,6 +57,8 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
+	__webpack_require__(3);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var app = new _vue2.default({
@@ -64,6 +66,16 @@
 		data: {
 			message: 'Hello world!',
 			header: 'Cinema WTF',
+			plan: {
+				screenPos: "top",
+				rows: [{
+					name: "A",
+					columns: [{
+						seat: "1",
+						score: 10
+					}]
+				}]
+			},
 			cinemaList: [{
 				region: '港島',
 				list: ['AMC 太古廣場', 'L Cinema', 'MCL JP', 'MCL 康怡戲院', 'MCL 海怡戲院', 'MCL 皇室戲院', 'UA Cine Times', 'UA 銀河影院 Director\'s Club', '新寶 總統戲院', '百老匯 PALACE ifc', '百老匯 數碼港']
@@ -8560,6 +8572,29 @@
 	  return Vue$3;
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _vue = __webpack_require__(2);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// <seat v-for="col in row.columns"></seat>
+	_vue2.default.component('floor-plan', {
+	  template: '\n              <div class="floor-plan">\n                <div class="screen" v-if="plan.screenPos === \'top\'"></div>\n                <div class="row" v-for="row in plan.rows">\n                  <span class="row-name">{{row.name}}</span>\n                </div>\n                <div class="screen" v-if="plan.screenPos === \'bottom\'"></div>\n              </div>\n            ',
+	  props: {
+	    plan: {
+	      type: Object,
+	      required: true
+	    }
+	  }
+	});
 
 /***/ }
 /******/ ]);

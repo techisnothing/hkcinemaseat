@@ -1,11 +1,26 @@
 import Vue from 'vue';
 import './components/hkcinematab';
+import "./components/floor-plan/floor-plan";
 
 new Vue({
 	el: '#app',
 	data: {
 		message: 'Hello world!',
 		header: 'Cinema WTF',
+		plan: {
+			screenPos: "top",
+			rows: [
+				{
+					name: "A",
+					columns: [
+						{
+							seat: "1",
+							score: 10
+						}
+					]
+				}
+			]
+		},
 		cinemaList: [
 			{
 				region: '港島',
