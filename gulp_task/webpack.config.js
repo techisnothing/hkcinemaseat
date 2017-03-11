@@ -3,6 +3,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
+	root: [
+		path.join(__dirname, '../node_modules'),
+		path.join(__dirname,'../src/js/')
+	],
 	context: path.join(__dirname,'../src/js/'),
 	externals:{
 		'jQuery':'$',
@@ -20,7 +24,10 @@ module.exports = {
 		],
 	},
 	resolve:{
-		extension: ['', '.js']
+		extension: ['', '.js'],
+		alias:{
+			vue: 'vue/dist/vue.js'
+		}
 	},
 	plugins:[
 		new webpack.optimize.DedupePlugin(),
