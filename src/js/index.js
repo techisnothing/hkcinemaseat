@@ -1,6 +1,7 @@
 import Vue from 'vue';
+import './components/hkcinematab';
 
-let app = new Vue({
+new Vue({
 	el: '#app',
 	data: {
 		message: 'Hello world!',
@@ -32,6 +33,6 @@ let app = new Vue({
 				]
 			},
 
-		]
+		],
 	}
 });

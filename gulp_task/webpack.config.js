@@ -20,6 +20,13 @@ module.exports = {
 				query:{
 					presets:['es2015','stage-2']
 				}
+			},
+			{
+				test:/\.html$/,
+				loader: 'html-loader',
+				options: {
+					minimize: true
+				}
 			}
 		],
 	},
