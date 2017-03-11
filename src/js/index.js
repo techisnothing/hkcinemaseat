@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import './components/hkcinematab';
-import "./components/floor-plan/floor-plan";
+import './components/floor-plan/floor-plan';
+import './components/tab/tab';
 
 new Vue({
 	el: '#app',
@@ -8,13 +8,13 @@ new Vue({
 		message: 'Hello world!',
 		header: 'Cinema WTF',
 		plan: {
-			screenPos: "top",
+			screenPos: 'top',
 			rows: [
 				{
-					name: "A",
+					name: 'A',
 					columns: [
 						{
-							seat: "1",
+							seat: '1',
 							score: 10
 						}
 					]
