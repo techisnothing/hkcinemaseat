@@ -1,4 +1,6 @@
 import Vue from 'vue';
+import './common/clear.css';
+import './common/cinemalist.css';
 import './components/floor-plan/floor-plan';
 import './components/tab/tab';
 
