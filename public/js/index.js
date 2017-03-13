@@ -59,21 +59,71 @@
 
 	__webpack_require__(3);
 
+	__webpack_require__(6);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var app = new _vue2.default({
+	new _vue2.default({
 		el: '#app',
 		data: {
 			message: 'Hello world!',
 			header: 'Cinema WTF',
 			plan: {
-				screenPos: "top",
-				rows: [{
-					name: "A",
-					columns: [{
-						seat: "1",
-						score: 10
-					}]
+				"screenPos": "bottom",
+				"rows": [{
+					"name": "A",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": "3", "score": 0 }, { "seat": "4", "score": 0 }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "B",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "C",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "D",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "E",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "F",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "G",
+					"columns": [{ "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "H",
+					"columns": [{ "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "I",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "J",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "K",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "L",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "M",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "N",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "O",
+					"columns": [{ "seat": "1", "score": 0 }, { "seat": "2", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "P",
+					"columns": [{ "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "15", "score": 0 }, { "seat": "16", "score": 0 }, { "seat": "17", "score": 0 }, { "seat": "18", "score": 0 }, { "seat": "19", "score": 0 }, { "seat": "20", "score": 0 }]
+				}, {
+					"name": "Q",
+					"columns": [{ "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": "disabled", "score": 0 }, { "seat": "disabled", "score": 0 }, { "seat": "disabled", "score": 0 }, { "seat": "disabled", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }]
+				}, {
+					"name": "R",
+					"columns": [{ "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": "5", "score": 0 }, { "seat": "6", "score": 0 }, { "seat": "7", "score": 0 }, { "seat": "8", "score": 0 }, { "seat": "9", "score": 0 }, { "seat": "10", "score": 0 }, { "seat": "11", "score": 0 }, { "seat": "12", "score": 0 }, { "seat": "13", "score": 0 }, { "seat": "14", "score": 0 }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }, { "seat": null, "score": null }]
 				}]
 			},
 			cinemaList: [{
@@ -8579,15 +8629,68 @@
 
 	'use strict';
 
+	__webpack_require__(4);
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _vue = __webpack_require__(2);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _hkcinematab = __webpack_require__(5);
+
+	var _hkcinematab2 = _interopRequireDefault(_hkcinematab);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_vue2.default.component('hkcinematab', {
+		template: _hkcinematab2.default,
+		data: function data() {
+			return {
+				houselist: [{
+					name: 'House 1',
+					url: '/1',
+					isActive: true
+				}, {
+					name: 'House 2',
+					url: '/2',
+					isActive: false
+				}, {
+					name: 'House 3',
+					url: '/3',
+					isActive: false
+				}]
+			};
+		}
+	});
+
+	// export default hkcinematab;
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"hkcinema-tab\">\r\n\t<ul class=\"nav nav-tabs\">\r\n\t\t<li v-for=\"house in houselist\" v-bind:class=\"{ active: house.isActive }\">\r\n\t\t\t<a v-bind:href=\"house.url\">{{ house.name }}</a>\r\n\t\t</li>\r\n\t</ul>\r\n</div>\r\n";
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
 	var _vue = __webpack_require__(2);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// <seat v-for="col in row.columns"></seat>
+	// <seat v-for="col in row.columns" :seat="col.seat" :score="col.score"></seat>
 	_vue2.default.component('floor-plan', {
-	  template: '\n              <div class="floor-plan">\n                <div class="screen" v-if="plan.screenPos === \'top\'"></div>\n                <div class="row" v-for="row in plan.rows">\n                  <span class="row-name">{{row.name}}</span>\n                </div>\n                <div class="screen" v-if="plan.screenPos === \'bottom\'"></div>\n              </div>\n            ',
+	  template: '\n              <div class="floor-plan">\n                <div class="screen" v-if="plan.screenPos === \'top\'"><span>Screen</span></div>\n                <div class="floor-plan__row" v-for="row in plan.rows">\n                  <span class="row-name">{{row.name}}</span>\n                  <div v-for="col in row.columns">\n                    <span class="seat">{{col.seat}}</span>\n                  </div>\n                </div>\n                <div class="screen" v-if="plan.screenPos === \'bottom\'"><span>Screen</span></div>\n              </div>\n            ',
 	  props: {
 	    plan: {
 	      type: Object,
