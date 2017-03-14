@@ -6,8 +6,10 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHot = require('webpack-hot-middleware');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
-
 const webpack_compile = webpack(webpackConfig);
+
+// route part
+const api_route = require('./backend/routes/api');
 
 const server_port = process.env.PORT || 8080;
 const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
@@ -27,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/
 
 app.use(bodyParser.json());
 
+app.use('/api', api_route);
 
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'backend/index.html'));
@@ -34,5 +37,5 @@ app.get('/', function (req, res) {
 
 
 app.listen(server_port, server_ip_address, function () {
-	console.log( 'Listening on ' + server_ip_address + ', server_port ' + server_port )
+	console.log( 'Listening on ' + server_ip_address + ', server_port ' + server_port );
 });
