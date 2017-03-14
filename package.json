@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app --harmony-destructing",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./node_modules/gulp/bin/gulp"
+    "build": "node ./node_modules/webpack/bin/webpack"
   },
   "repository": {
     "type": "git",
@@ -16,31 +16,30 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/belloworld/hkcinemaseat#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "html-loader": "^0.4.5",
-    "lodash": "^4.17.4",
-    "vue": "^2.2.2"
-  },
-  "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.23.1",
-    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-2": "^6.22.0",
+    "body-parser": "^1.17.1",
+    "css-loader": "^0.27.1",
+    "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "html-loader": "^0.4.5",
+    "lodash": "^4.17.4",
+    "style-loader": "^0.13.2",
+    "vue": "^2.2.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "chai": "^3.5.0",
     "del": "^2.2.2",
     "eslint": "^3.17.1",
     "eslint-plugin-flowtype": "^2.30.3",
     "flow-bin": "^0.41.0",
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-util": "^3.0.8",
-    "livereload": "^0.6.0",
-    "vinyl-named": "^1.1.0",
-    "webpack": "^2.2.1",
-    "webpack-stream": "^3.2.0"
+    "webpack-hot-middleware": "^2.17.1"
   }
 }

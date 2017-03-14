@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import template from './tab.html';
 
+
 Vue.component('tab', {
 	template,
 	data() {
@@ -24,4 +25,4 @@ Vue.component('tab', {
 	}
 });
 
-// export default hkcinematab;
+
