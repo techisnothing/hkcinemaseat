@@ -20,9 +20,9 @@ app.use(webpackDevMiddleware(webpack_compile,{
 }));
 app.use(webpackHot(webpack_compile));
 
-// app.use('/js', express.static('public/js'));
-// app.use('/css', express.static('public/css'));
-// app.use('/img', express.static('public/img'));
+// app.use('/js', express.static('dist/js'));
+// app.use('/css', express.static('dist/css'));
+// app.use('/img', express.static('dist/img'));
 
 app.use(bodyParser.json({limit: 1024 * 1024 * 20})); // for parsing application/json 20MB
 app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
