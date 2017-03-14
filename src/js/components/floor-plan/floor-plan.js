@@ -7,9 +7,9 @@ Vue.component('floor-plan', {
                 <div class="screen" v-if="plan.screenPos === 'top'"><span>Screen</span></div>
                 <div class="floor-plan__row" v-for="row in plan.rows">
                   <span class="row-name">{{row.name}}</span>
-                  <div v-for="col in row.columns">
-                    <span class="seat">{{col.seat}}</span>
-                  </div>
+                  <span v-for="col in row.columns">
+                    <seat :seat="col"></seat>
+                  </span>
                 </div>
                 <div class="screen" v-if="plan.screenPos === 'bottom'"><span>Screen</span></div>
               </div>

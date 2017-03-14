@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import './components/hkcinematab';
 import "./components/floor-plan/floor-plan";
+import './components/seat/seat'
 
 new Vue({
 	el: '#app',
