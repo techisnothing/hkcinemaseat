@@ -1,7 +1,8 @@
 import Vue from 'vue';
-import template from './hkcinematab.html';
+import template from './tab.html';
 
-Vue.component('hkcinematab', {
+
+Vue.component('tab', {
 	template,
 	data() {
 		return {
@@ -14,16 +15,14 @@ Vue.component('hkcinematab', {
 				{
 					name: 'House 2',
 					url: '/2',
-					isActive: false,
 				},
 				{
 					name: 'House 3',
 					url: '/3',
-					isActive: false,
 				}
 			],
 		};
 	}
 });
 
-// export default hkcinematab;
+

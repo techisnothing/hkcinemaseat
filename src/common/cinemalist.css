@@ -1,13 +1,8 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .cinemaList {
     margin: 0 0 8px 0
 }
 .background {
-    background-image: url("./cinema_background.jpg");
+    /*background-image: url("./cinema_background.jpg");*/
     background-position: center center;
     background-size: cover;
 }

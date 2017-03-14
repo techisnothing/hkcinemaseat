@@ -2,14 +2,25 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHot = require('webpack-hot-middleware');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config');
+
+const webpack_compile = webpack(webpackConfig);
 
 const server_port = process.env.PORT || 8080;
 const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 const app = express();
 
-app.use('/js', express.static('public/js'));
-app.use('/css', express.static('public/css'));
-app.use('/img', express.static('public/img'));
+app.use(webpackDevMiddleware(webpack_compile,{
+	publicPath: '/',
+}));
+app.use(webpackHot(webpack_compile));
+
+// app.use('/js', express.static('public/js'));
+// app.use('/css', express.static('public/css'));
+// app.use('/img', express.static('public/img'));
 
 app.use(bodyParser.json({limit: 1024 * 1024 * 20})); // for parsing application/json 20MB
 app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
