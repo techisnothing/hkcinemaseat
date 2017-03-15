@@ -1,7 +1,36 @@
 .screen {
-  margin: auto;
-  width: 80%;
-  height: 35px;
-  border: 3px solid red;
-  background-color: red;
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    border: 3px solid #3c763d;
+    background-color: #3c763d;
+    text-align: center;
+}
+
+.screen--top {
+    margin-bottom: 30px;
+}
+
+.screen--bottom {
+    margin-top: 30px;
+}
+
+.screen span {
+    font-size: 20px
+}
+
+.floor-plan__row {
+    margin: auto;
+    width: 80%;
+    height: 35px;
+}
+.floor-plan__seat-row {
+    display: flex;
+    justify-content: center;
+}
+.floor-plan__row .row-name {
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }

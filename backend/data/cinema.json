@@ -1,0 +1,112 @@
+[
+    {
+        "id": "broadway",
+        "name": "百老匯",
+        "numOfCinema": 10,
+        "cinemaList": [
+            {
+                "id": "palace-ifc",
+                "name": "百老匯 PALACE ifc",
+                "house": ["1", "2", "3", "4", "5"],
+                "regionCode": "HK"
+            },
+            {
+                "id": "cyberport",
+                "name": "百老匯 數碼港",
+                "house": ["1", "2", "3", "4"],
+                "regionCode": "HK"
+            },
+            {
+                "id": "hollywood",
+                "name": "百老匯 荷里活",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "the-one",
+                "name": "百老匯 The ONE",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "cinematheque",
+                "name": "百老匯電影中心",
+                "house": ["1", "2", "3", "4"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "mongkok",
+                "name": "百老匯 旺角",
+                "house": ["1", "2", "3", "4", "5"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "palace-apm",
+                "name": "百老匯 PALACE apm",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "kwai-fong",
+                "name": "百老匯 葵芳",
+                "house": ["1", "2", "3", "4", "5"],
+                "regionCode": "NT"
+            },
+            {
+                "id": "tsuen-wan",
+                "name": "百老匯 荃灣",
+                "house": ["1", "2", "3", "4"],
+                "regionCode": "NT"
+            },
+            {
+                "id": "kingswood-ginza",
+                "name": "百老匯 嘉湖銀座",
+                "house": ["1", "2", "3", "4"],
+                "regionCode": "NT"
+            }
+        ]
+    },
+    {
+        "id": "ua",
+        "name": "UA",
+        "numOfCinema": 6,
+        "cinemaList": [
+            {
+                "id": "cine-times",
+                "name": "UA Cine Times",
+                "house": ["1", "2", "3", "4", "5"],
+                "regionCode": "HK"
+            },
+            {
+                "id": "cine-moko",
+                "name": "UA Cine Moko",
+                "house": ["1", "2", "3", "4", "IMAX"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "isquare",
+                "name": "UA iSQUARE",
+                "house": ["1", "2", "3", "IMAX", "Phoenix"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "megabox",
+                "name": "UA MegaBox",
+                "house": ["1", "2", "3", "4", "5", "6", "IMAX"],
+                "regionCode": "KLN"
+            },
+            {
+                "id": "tmtplaza",
+                "name": "UA 屯門市廣場",
+                "house": ["1", "2", "3", "4"],
+                "regionCode": "NT"
+            },
+            {
+                "id": "airport",
+                "name": "UA 機場IMAX",
+                "house": ["IMAX"],
+                "regionCode": "NT"
+            }
+        ]
+    }
+]

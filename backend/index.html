@@ -17,16 +17,16 @@
             </nav>
             <div class="container">
                 <h2>戲院列表</h2>
-                <div class="col-md-12" v-for="cinemaByRegion in cinemaList">
+                <div class="col-md-12" v-for="company in cinemaList">
                     <h3 class="header">
-                        {{cinemaByRegion.region}}
+                        {{company.name}}
                     </h3>
-                    <div class="col-md-3 cinemaList" v-for="cinema in cinemaByRegion.list">
-                        <a class="link" href="#">{{cinema}}</a>
+                    <div class="col-md-3 cinemaList" v-for="cinema in company.cinemaList">
+                        <a class="link" v-bind:href="company.id + '/' + cinema.id + '/1'">{{cinema.name}}</a>
                     </div>
                 </div>
             </div>
-            <tab ></tab>
+            <floor-plan :plan="plan"></floor-plan>
         </div>
 
 <!--         <div class="background">
