@@ -1,5 +1,3 @@
-<span class="seat">
-    <span class="seat__row">
-        {{seat.seat}}
-    </span>
+<span class="seat" :class="{ 'seat--empty': !seatParam.seat }">
+    {{seatParam.seat}}
 </span>
