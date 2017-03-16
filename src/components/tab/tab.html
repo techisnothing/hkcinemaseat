@@ -1,7 +1,7 @@
 <div class="hkcinema-tab">
 	<ul class="nav nav-tabs">
-		<li v-for="house in houselist" v-bind:class="{ active: house.isActive }">
-			<a v-bind:href="house.url">{{ house.name }}</a>
+		<li v-for="house in houses" :class="{ active: isActive(house.id) }">
+			<a v-bind:href="house.url"  v-on:click.prevent="onClick(house.id)">{{ house.name }}</a>
 		</li>
 	</ul>
 </div>
