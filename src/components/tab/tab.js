@@ -35,6 +35,7 @@ Vue.component('tab', {
 	methods:{
 		onClick(id){
 			this.active = id;
+			this.$emit('floorplan-change', id);
 		},
 		isActive(id){
 			return this.active === id;

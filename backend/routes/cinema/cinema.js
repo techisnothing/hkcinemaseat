@@ -120,7 +120,7 @@ route.get('/:brandname/:venue/:house',(req, res) => {
 		.then((data)=>{
 			res.json(JSON.parse(data));
 		})
-		.catch(()=>{
+		.catch((e)=>{
 			res.status(404).end();
 		});
 });

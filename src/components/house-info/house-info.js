@@ -15,5 +15,9 @@ Vue.component('house-info',{
 			type: Array,
 		}
 	},
-
+	methods:{
+		onHouseChange(house_id){
+			this.$emit('floorplan-change', 'broadway', 'mk', house_id);
+		},
+	}
 });

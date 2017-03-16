@@ -1,4 +1,4 @@
 <div class="house_info_section">
-	<tab :houselist="houselist"></tab>
+	<tab :houselist="houselist" v-on:floorplan-change="onHouseChange"></tab>
 	<floor-plan :plan="plan"></floor-plan>
 </div>

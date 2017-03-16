@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <house-info :plan="plan" :houselist="houselist"></house-info>
+            <house-info :plan="plan" :houselist="houselist" v-on:floorplan-change="fetch_seat_plan"></house-info>
         </div>
     </body>
     <script src="./js/index.js"></script>
