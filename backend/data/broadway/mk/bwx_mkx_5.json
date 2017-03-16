@@ -33,7 +33,7 @@
       "name": "C",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
@@ -47,7 +47,7 @@
       "name": "D",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
@@ -61,7 +61,7 @@
       "name": "E",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
@@ -75,7 +75,7 @@
       "name": "F",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
@@ -89,7 +89,7 @@
       "name": "G",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
@@ -103,7 +103,7 @@
       "name": "H",
       "columns": [
         {"seat": "1", "score": 0},
-        {"seat": "2", "score": 0}
+        {"seat": "2", "score": 0},
         {"seat": "3", "score": 0},
         {"seat": "4", "score": 0},
         {"seat": "5", "score": 0},
