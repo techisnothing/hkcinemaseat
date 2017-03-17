@@ -17,8 +17,11 @@ const app = express();
 
 app.use(webpackDevMiddleware(webpack_compile,{
 	publicPath: '/',
+	noInfo: true,
 }));
-app.use(webpackHot(webpack_compile));
+app.use(webpackHot(webpack_compile, {
+	noInfo: true,
+}));
 
 // app.use('/js', express.static('dist/js'));
 // app.use('/css', express.static('dist/css'));
