@@ -8,7 +8,7 @@
 }
 
 .screen--top {
-    margin-bottom: 30px;
+    margin: 50px auto 30px;
 }
 
 .screen--bottom {
@@ -17,6 +17,10 @@
 
 .screen span {
     font-size: 20px
+}
+
+.floor-plan {
+    margin-top: 50px;
 }
 
 .floor-plan__row {
