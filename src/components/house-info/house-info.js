@@ -3,7 +3,7 @@ import 'vue-resource';
 import '../floor-plan/floor-plan.js';
 import '../tab/tab.js';
 import template from './house-info.html';
-import "./house-info.css"
+import './house-info.css';
 
 Vue.component('house-info',{
 	template,
@@ -12,8 +12,11 @@ Vue.component('house-info',{
 		plan: {
 			type: Object
 		},
-		houselist:{
+		houses:{
 			type: Array,
+		},
+		currenthouse:{
+			type: String,
 		}
 	},
 	methods:{

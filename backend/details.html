@@ -20,7 +20,7 @@
                   <a href="/">戲院列表</a> > {{cinemaName}}
                 </h2>
             </div>
-            <house-info :plan="plan" :houselist="houselist" v-on:floorplan-change="fetch_seat_plan"></house-info>
+            <house-info :plan="plan" :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="on_floor_plan_change"></house-info>
         </div>
     </body>
     <script src="/js/details.js"></script>
