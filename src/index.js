@@ -11,7 +11,6 @@ new Vue({
 	el: '#app',
 	data: {
 		message: 'Hello world!',
-		header: 'Cinema WTF',
 		plan: {},
 		cinemaList: cinemaList,
 	}
