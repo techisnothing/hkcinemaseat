@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="/css/details.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
@@ -16,17 +16,12 @@
                 </div>
             </nav>
             <div class="container">
-                <h2>戲院列表</h2>
-                <div class="col-md-12" v-for="company in cinemaList">
-                    <h3 class="header">
-                        {{company.name}}
-                    </h3>
-                    <div class="col-md-3 cinemaList" v-for="cinema in company.cinemaList">
-                        <a class="link" v-bind:href="company.id + '/' + cinema.id + '/1'">{{cinema.name}}</a>
-                    </div>
-                </div>
+                <h2>
+                  <a href="/">戲院列表</a> > {{cinemaName}}
+                </h2>
             </div>
+            <house-info :plan="plan" :houselist="houselist" v-on:floorplan-change="fetch_seat_plan"></house-info>
         </div>
     </body>
-    <script src="./js/index.js"></script>
+    <script src="/js/details.js"></script>
 </html>

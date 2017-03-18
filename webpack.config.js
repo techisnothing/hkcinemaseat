@@ -7,7 +7,8 @@ module.exports = {
 	context: path.join(__dirname, './src'),
 	devtool: 'inline-source-map',
 	entry:{
-		index: ['./index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true']
+		index: ['./index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true'],
+		details: ['./details.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true']
 	},
 	output:{
 		path: path.resolve(__dirname, './dist'),

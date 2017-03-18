@@ -38,6 +38,10 @@ app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'backend/index.html'));
 });
 
+app.get('/:brandname/:venue/:house', function (req, res) {
+	//TODO: Handle unknown brandname / venue / house
+	res.sendFile(path.join(__dirname, 'backend/details.html'));
+});
 
 app.listen(server_port, server_ip_address, function () {
 	console.log( 'Listening on ' + server_ip_address + ', server_port ' + server_port );

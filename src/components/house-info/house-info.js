@@ -3,6 +3,7 @@ import 'vue-resource';
 import '../floor-plan/floor-plan.js';
 import '../tab/tab.js';
 import template from './house-info.html';
+import "./house-info.css"
 
 Vue.component('house-info',{
 	template,
