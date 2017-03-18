@@ -43,6 +43,14 @@ app.get('/:brandname/:venue/:house', function (req, res) {
 	res.sendFile(path.join(__dirname, 'backend/details.html'));
 });
 
+app.get('/robots.txt', function (req, res) {
+	res.sendFile(path.join(__dirname, 'backend/robots.txt'));
+});
+
+app.get('/sitemap.xml', function (req, res) {
+	res.sendFile(path.join(__dirname, 'backend/sitemap.xml'));
+});
+
 app.listen(server_port, server_ip_address, function () {
 	console.log( 'Listening on ' + server_ip_address + ', server_port ' + server_port );
 });
