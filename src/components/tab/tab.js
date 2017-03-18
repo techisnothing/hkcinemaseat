@@ -1,3 +1,4 @@
+//@flow
 import Vue from 'vue';
 import _ from 'lodash';
 import template from './tab.html';
@@ -6,11 +7,11 @@ import template from './tab.html';
 function transfrom_list(house){
 	return _.map(house, (el)=>{
 		//TODO: should have a more robust api for house list
-		let num = el.split(' ')[2];
+		let house_id = el.split(' ')[2];
 		return {
-			id: parseInt(num),
-			name: `House ${num}`,
-			url: `/broadway/mk/${num}`
+			id: house_id,
+			name: `House ${house_id}`,
+			url: `/broadway/mk/${house_id}`
 		};
 	});
 }
@@ -29,7 +30,7 @@ Vue.component('tab', {
 	},
 	data(){
 		return {
-			active: 1,
+			active: null,
 		};
 	},
 	methods:{
@@ -39,6 +40,11 @@ Vue.component('tab', {
 		},
 		isActive(id){
 			return this.active === id;
+		}
+	},
+	watch: {
+		houselist(){
+			this.active = _.get(this.houses, '[0].id');
 		}
 	}
 });

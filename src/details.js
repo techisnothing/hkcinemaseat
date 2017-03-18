@@ -29,7 +29,7 @@ new Vue({
 			if (results && results[1]) {
 				return results[1];
 			} else {
-				return "";
+				return '';
 			}
 		}
 	},
@@ -43,7 +43,6 @@ new Vue({
 		fetch_seat_plan(brand= 'broadway', venue = 'mk', house = '1'){
 
 			let dist_url = `/api/cinema/${brand}/${venue}/${house}`;
-			console.log(dist_url);
 			this.$http.get(dist_url).then(({body: plan})=>{
 				this.plan = plan;
 			});
