@@ -21,6 +21,7 @@
 
 .floor-plan {
     margin-top: 50px;
+    overflow-x: scroll;
 }
 
 .floor-plan__row {
@@ -32,9 +33,16 @@
     display: flex;
     justify-content: center;
 }
-.floor-plan__row .row-name {
+.row-name {
     float: left;
     width: 30px;
     height: 30px;
     text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .floor-plan__seat-row {
+        justify-content: flex-start;
+    }
 }
