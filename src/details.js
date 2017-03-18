@@ -18,8 +18,7 @@ new Vue({
 		this.fetch_seat_plan();
 	},
 	data: {
-		message: 'Hello world!',
-		header: 'Cinema WTF',
+		header: '揀位王',
 		plan: {},
 		houselist: [],
 	},

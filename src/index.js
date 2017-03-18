@@ -10,7 +10,6 @@ Vue.use(vue_http);
 new Vue({
 	el: '#app',
 	data: {
-		message: 'Hello world!',
 		plan: {},
 		cinemaList: cinemaList,
 	}
