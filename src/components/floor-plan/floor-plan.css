@@ -21,7 +21,6 @@
 
 .floor-plan {
     margin-top: 50px;
-    overflow-x: scroll;
 }
 
 .floor-plan__row {
@@ -42,6 +41,9 @@
 
 
 @media (max-width: 600px) {
+    .floor-plan {
+        overflow-x: scroll;
+    }
     .floor-plan__seat-row {
         justify-content: flex-start;
     }
