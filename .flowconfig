@@ -1,0 +1,26 @@
+[ignore]
+.*/node_modules/vue/src/.*
+.*/node_modules/vue-resource/.*
+
+
+[include]
+
+[libs]
+# flowtype offical supported type/declaration librarys (most of the time sucks)
+flow-typed/npm
+# custom type/declaration goes here
+flow-typed
+
+[options]
+# flow scan files with the following extension
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.html
+module.file_ext=.css
+
+# flow resolve import/require syntax in these directories for type hints
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+
+[version]
+^0.38.0

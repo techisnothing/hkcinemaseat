@@ -21,7 +21,8 @@ module.exports = {
 				use:[{
 					loader:'babel-loader',
 					options:{
-						presets:['es2015','stage-2']
+						presets:['es2015','stage-2'],
+						plugins: [ 'transform-flow-strip-types' ]
 					}
 				}]
 			},
@@ -56,7 +57,7 @@ module.exports = {
 			allChunks: true,
 		}),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoErrorsPlugin()
+		new webpack.NoEmitOnErrorsPlugin()
 		// new webpack.optimize.UglifyJsPlugin()
 	]
 };
