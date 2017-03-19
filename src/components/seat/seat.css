@@ -12,3 +12,31 @@
 .seat.seat--empty {
     background-color: white;
 }
+
+.seat--0 {
+    background-color: #eee;
+}
+.seat--1 {
+    background-color: #F44336;
+}
+.seat--2 {
+    background-color: #EF9A9A;
+}
+.seat--3 {
+    background-color: #eee;
+}
+.seat--4 {
+    background-color: #A5D6A7;
+}
+.seat--5 {
+    background-color: #4CAF50;
+}
+
+.seat--disabled {
+    background-image: url('/img/ic_accessible_black_18px.svg');
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}

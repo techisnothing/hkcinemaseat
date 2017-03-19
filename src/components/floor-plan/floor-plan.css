@@ -20,7 +20,21 @@
 }
 
 .floor-plan {
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.floor-plan__color-description {
+    margin: 0 auto 10px;
+    width: 80%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.floor-plan__color-description-text {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
 }
 
 .floor-plan__row {
