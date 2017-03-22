@@ -13,24 +13,28 @@
             },
             {
                 "id": "cyberport",
+                "alias": "cbp",
                 "name": "百老匯 數碼港",
                 "house": ["1", "2", "3", "4"],
                 "regionCode": "HK"
             },
             {
                 "id": "hollywood",
+                "alias": "hlw",
                 "name": "百老匯 荷里活",
                 "house": ["1", "2", "3", "4", "5", "6"],
                 "regionCode": "KLN"
             },
             {
                 "id": "the-one",
+                "alias": "one",
                 "name": "百老匯 The ONE",
                 "house": ["1", "2", "3", "4", "5", "6"],
                 "regionCode": "KLN"
             },
             {
                 "id": "cinematheque",
+                "alias": "que",
                 "name": "百老匯電影中心",
                 "house": ["1", "2", "3", "4"],
                 "regionCode": "KLN"
