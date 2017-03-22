@@ -19,8 +19,8 @@ new Vue({
 	el: '#app',
 	created(){
 		let house = extract_housename(window.location.pathname);
-		this.fetch_house_list();
-		this.fetch_seat_plan('broadway', 'mk', house)
+		this.fetch_house_list('broadway', 'mongkok');
+		this.fetch_seat_plan('broadway', 'mongkok', house)
 			.then(()=>{
 				historyManager.replaceState({house}, null , house);
 			});
@@ -28,7 +28,7 @@ new Vue({
 
 		historyManager.on('history_change',(state)=>{
 			let {house}  = state;
-			this.fetch_seat_plan('broadway', 'mk', house);
+			this.fetch_seat_plan('broadway', 'mongkok', house);
 		});
 	},
 	data: {
@@ -49,28 +49,29 @@ new Vue({
 		houses(){
 			return _.map(this.houselist, (el)=>{
 				//TODO: should have a more robust api for house list
-				let house_id = el.split(' ')[2];
+				let house_id = el;
 				return {
 					id: house_id,
 					name: `House ${house_id}`,
-					url: `/broadway/mk/${house_id}`
+					url: `/broadway/mongkok/${house_id}`
 				};
 			});
 		}
 	},
 	methods:{
-		fetch_house_list(brand= 'broadway', venue = 'mk'){
+		fetch_house_list(brand, venue){
 			let dist_url = `/api/cinema/${brand}/${venue}`;
 			this.$http.get(dist_url).then(({body: list})=>{
-				this.houselist = list;
+				console.log(list);
+				this.houselist = list.house;
 			});
 		},
-		on_floor_plan_change(brand= 'broadway', venue = 'mk', house = '1'){
+		on_floor_plan_change(brand, venue, house){
 			this.fetch_seat_plan(brand, venue, house).then(()=>{
 				historyManager.pushState({house}, null, house);
 			});
 		},
-		fetch_seat_plan(brand= 'broadway', venue = 'mk', house = '1'){
+		fetch_seat_plan(brand, venue, house){
 			let dist_url = `/api/cinema/${brand}/${venue}/${house}`;
 			return this.$http.get(dist_url).then(({body: plan})=>{
 				this.plan = plan;

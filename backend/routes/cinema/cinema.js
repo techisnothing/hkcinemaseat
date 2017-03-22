@@ -6,45 +6,10 @@ const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
 const data_path = path.resolve(__dirname, '../../', 'data');
+const cinema_data = require(path.resolve(data_path, 'cinema.json'));
 
 Promise.promisifyAll(fs);
 
-
-let cache = {};
-//private read file helper
-const read_data_path = (path) => {
-	let promise;
-	if(_.get(cache, path, null) === null){
-		promise =
-		fs.readdirAsync(path)
-			.then((list)=>{
-				cache = _.map(list, _.lowerCase);
-				return cache;
-			})
-			.catch((e)=>{
-				throw e;
-			});
-	}else{
-		promise = new Promise((resolve)=> resolve(cache[path]));
-	}
-	return promise;
-};
-
-
-
-const brandname_dic = {
-	'broadway': 'bwx',
-};
-const venue_dic = {
-	'mk': 'mkx',
-};
-const toFileName = (brandname, venue, house)=>{
-	return [
-		_.get(brandname_dic, brandname),
-		_.get(venue_dic, venue),
-		house.toString(),
-	].join('_') + '.json';
-};
 
 /**
  * @api {get} /api/cinema Request avaliable cinema brand
@@ -54,9 +19,7 @@ const toFileName = (brandname, venue, house)=>{
  * @apiSuccess {Array} list of avaliable cinema brand.
  */
 route.get('/', (req, res)=>{
-	read_data_path(data_path).then((list)=>{
-		res.send(list);
-	});
+	res.json(cinema_data);
 });
 
 
@@ -71,14 +34,12 @@ route.get('/', (req, res)=>{
 route.get('/:brandname', (req,res)=>{
 	//TODO: sanitization
 	let {brandname} = req.params;
-	brandname = _.lowerCase(brandname);
-	read_data_path(path.join(data_path, brandname))
-		.then((list)=>{
-			res.send(list);
-		})
-		.catch(()=>{
-			res.status(404).end();
-		});
+	brandname = _.toLower(brandname);
+	let brand = _.find(cinema_data, {id: brandname});
+	if(brand)
+		res.json(brand);
+	else
+		res.status(404).end('Not Found');
 });
 
 /**
@@ -90,17 +51,21 @@ route.get('/:brandname', (req,res)=>{
  * @apiError NotFound {String}
  */
 route.get('/:brandname/:venue',(req, res) => {
-	//TODO: sanitization
+	// //TODO: sanitization
 	let {brandname, venue} = req.params;
-	[brandname, venue] = _.map([brandname, venue], _.lowerCase);
-	read_data_path(path.join(data_path, brandname, venue))
-		.then((list)=>{
-			res.send(list);
-		})
-		.catch(()=>{
-			res.status(404).end();
-		});
+	[brandname, venue] = _.map([brandname, venue], _.toLower);
+
+	let brand = _.find(cinema_data, {id: brandname});
+	let cinema = _.find(_.get(brand, 'cinemaList'), {id: venue});
+
+	if(cinema){
+		res.json(cinema);
+	}else{
+		res.status(404).end('Not Found');
+	}
+
 });
+
 
 /**
  * @api {get} /api/cinema/:brandname/:venue/:house Request avaliable house data
@@ -113,15 +78,22 @@ route.get('/:brandname/:venue',(req, res) => {
 route.get('/:brandname/:venue/:house',(req, res) => {
 	//TODO: sanitization
 	let {brandname, venue, house} = req.params;
-	[brandname, venue] = _.map([brandname, venue], _.lowerCase);
-	let filename = toFileName(brandname, venue, house);
+	[brandname, venue, house] = _.map([brandname, venue, house], _.toLower);
+
+	let brand = _.find(cinema_data, {id: brandname});
+	let cinema = _.find(_.get(brand, 'cinemaList'), {id: venue});
+	let filename = [
+		_.get(brand, 'alias'),
+		_.get(cinema, 'alias'),
+		house.toString(),
+	].join('_') + '.json';
 
 	fs.readFileAsync(path.join(data_path, brandname, venue, filename))
 		.then((data)=>{
 			res.json(JSON.parse(data));
 		})
-		.catch((e)=>{
-			res.status(404).end();
+		.catch(()=>{
+			res.status(404).end('Not Found');
 		});
 });
 

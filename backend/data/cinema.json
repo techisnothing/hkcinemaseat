@@ -1,6 +1,7 @@
 [
     {
         "id": "broadway",
+        "alias": "bwx",
         "name": "百老匯",
         "numOfCinema": 10,
         "cinemaList": [
@@ -36,6 +37,7 @@
             },
             {
                 "id": "mongkok",
+                "alias": "mkx",
                 "name": "百老匯 旺角",
                 "house": ["1", "2", "3", "4", "5"],
                 "regionCode": "KLN"
