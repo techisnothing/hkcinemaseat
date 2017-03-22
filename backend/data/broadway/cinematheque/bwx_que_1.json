@@ -561,6 +561,10 @@
       "name": "C",
       "columns": [
         {
+          "seat": "13",
+          "score": 0
+        },
+        {
           "seat": "12",
           "score": 0
         },
@@ -615,10 +619,6 @@
         {
           "seat": "1",
           "score": 0
-        },
-        {
-          "seat": null,
-          "score": null
         },
         {
           "seat": null,
