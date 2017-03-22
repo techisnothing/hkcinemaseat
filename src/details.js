@@ -7,53 +7,41 @@ import './common/cinemalist.css';
 import './components/house-info/house-info';
 import './components/seat/seat';
 
-const CINEMA_DETAILS_REGEX = /^\/([a-z]*)\/([a-z]*)/;
-
-const extract_housename = (path) => {
-	return _.last(path.split('/'));
-};
-
 Vue.use(vue_http);
 
 new Vue({
 	el: '#app',
 	created(){
-		let house = extract_housename(window.location.pathname);
-		this.fetch_house_list('broadway', 'mongkok');
-		this.fetch_seat_plan('broadway', 'mongkok', house)
+		let [ , brand, venue, house] = window.location.pathname.split('/');
+		this.brand = brand;
+		this.venue = venue;
+		this.fetch_house_list(brand, venue);
+
+		this.fetch_seat_plan(brand, venue, house)
 			.then(()=>{
 				historyManager.replaceState({house}, null , house);
 			});
-
-
 		historyManager.on('history_change',(state)=>{
 			let {house}  = state;
-			this.fetch_seat_plan('broadway', 'mongkok', house);
+			this.fetch_seat_plan(this.brand, this.venue, house);
 		});
 	},
 	data: {
 		header: '揀位王',
 		plan: {},
+		cinemainfo: {},
 		houselist: [],
 		currenthouse: '',
 	},
 	computed: {
-		cinemaName: function() {
-			let results = CINEMA_DETAILS_REGEX.exec(location.pathname);
-			if (results && results[1]) {
-				return results[1];
-			} else {
-				return '';
-			}
-		},
 		houses(){
-			return _.map(this.houselist, (el)=>{
+			return _.map(this.cinemainfo.house, (el)=>{
 				//TODO: should have a more robust api for house list
 				let house_id = el;
 				return {
 					id: house_id,
 					name: `House ${house_id}`,
-					url: `/broadway/mongkok/${house_id}`
+					url: `/${this.brand}/${this.venue}/${house_id}`
 				};
 			});
 		}
@@ -61,13 +49,12 @@ new Vue({
 	methods:{
 		fetch_house_list(brand, venue){
 			let dist_url = `/api/cinema/${brand}/${venue}`;
-			this.$http.get(dist_url).then(({body: list})=>{
-				console.log(list);
-				this.houselist = list.house;
+			this.$http.get(dist_url).then(({body: info})=>{
+				this.cinemainfo = info;
 			});
 		},
-		on_floor_plan_change(brand, venue, house){
-			this.fetch_seat_plan(brand, venue, house).then(()=>{
+		on_floor_plan_change(house){
+			this.fetch_seat_plan(this.brand, this.venue, house).then(()=>{
 				historyManager.pushState({house}, null, house);
 			});
 		},

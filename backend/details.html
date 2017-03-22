@@ -18,7 +18,7 @@
             </nav>
             <div class="container">
                 <h2>
-                  <a href="/">戲院列表</a> > {{cinemaName}}
+                  <a href="/">戲院列表</a> > {{ cinemainfo.name || brand}}
                 </h2>
             </div>
             <house-info :plan="plan" :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="on_floor_plan_change"></house-info>

@@ -21,7 +21,7 @@ Vue.component('house-info',{
 	},
 	methods:{
 		onHouseChange(house_id){
-			this.$emit('floorplan-change', 'broadway', 'mongkok', house_id);
+			this.$emit('floorplan-change', house_id);
 		},
 	}
 });
