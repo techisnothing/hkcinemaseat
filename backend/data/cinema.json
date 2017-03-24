@@ -9,6 +9,7 @@
                 "id": "palace-ifc",
                 "name": "百老匯 PALACE ifc",
                 "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
                 "regionCode": "HK"
             },
             {
@@ -16,6 +17,7 @@
                 "alias": "cbp",
                 "name": "百老匯 數碼港",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "HK"
             },
             {
@@ -30,6 +32,7 @@
                 "alias": "one",
                 "name": "百老匯 The ONE",
                 "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -37,6 +40,7 @@
                 "alias": "que",
                 "name": "百老匯電影中心",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -44,30 +48,35 @@
                 "alias": "mkx",
                 "name": "百老匯 旺角",
                 "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "palace-apm",
                 "name": "百老匯 PALACE apm",
                 "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "kwai-fong",
                 "name": "百老匯 葵芳",
                 "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
                 "regionCode": "NT"
             },
             {
                 "id": "tsuen-wan",
                 "name": "百老匯 荃灣",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "NT"
             },
             {
                 "id": "kingswood-ginza",
                 "name": "百老匯 嘉湖銀座",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "NT"
             }
         ]
@@ -81,36 +90,42 @@
                 "id": "cine-times",
                 "name": "UA Cine Times",
                 "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
                 "regionCode": "HK"
             },
             {
                 "id": "cine-moko",
                 "name": "UA Cine Moko",
                 "house": ["1", "2", "3", "4", "IMAX"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "isquare",
                 "name": "UA iSQUARE",
                 "house": ["1", "2", "3", "IMAX", "Phoenix"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "megabox",
                 "name": "UA MegaBox",
                 "house": ["1", "2", "3", "4", "5", "6", "IMAX"],
+                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "tmtplaza",
                 "name": "UA 屯門市廣場",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "NT"
             },
             {
                 "id": "airport",
                 "name": "UA 機場IMAX",
                 "house": ["IMAX"],
+                "disable": true,
                 "regionCode": "NT"
             }
         ]
