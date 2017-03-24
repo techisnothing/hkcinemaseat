@@ -29,7 +29,8 @@
                         {{company.name}}
                     </h3>
                     <div class="col-md-3 cinemaList" v-for="cinema in company.cinemaList">
-                        <a class="link" v-bind:href="company.id + '/' + cinema.id + '/1'">{{cinema.name}}</a>
+                        <a v-if="!cinema.disable" class="link" v-bind:href="company.id + '/' + cinema.id + '/1'">{{cinema.name}}</a>
+                        <span v-else>{{cinema.name}}</span>
                     </div>
                 </div>
             </div>
