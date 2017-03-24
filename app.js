@@ -2,11 +2,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpackHot = require('webpack-hot-middleware');
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config');
-const webpack_compile = webpack(webpackConfig);
+// const webpackDevMiddleware = require('webpack-dev-middleware');
+// const webpackHot = require('webpack-hot-middleware');
+// const webpack = require('webpack');
+// const webpackConfig = require('./webpack.config');
+// const webpack_compile = webpack(webpackConfig);
 
 // route part
 const api_route = require('./backend/routes/api');
