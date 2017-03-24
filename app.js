@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const compression = require('compression');
 // const webpackDevMiddleware = require('webpack-dev-middleware');
 // const webpackHot = require('webpack-hot-middleware');
 // const webpack = require('webpack');
@@ -23,6 +24,8 @@ const app = express();
 // 	noInfo: true,
 // }));
 
+
+app.use(compression());
 app.use('/js', express.static('dist/js'));
 app.use('/css', express.static('dist/css'));
 app.use('/img', express.static('public/img'));
