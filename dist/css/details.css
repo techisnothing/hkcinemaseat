@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.cinemaList {
+    margin: 0 0 8px 0
+}
+.background {
+    /*background-image: url("./cinema_background.jpg");*/
+    background-position: center center;
+    background-size: cover;
+}
+.background:after {
+    position: absolute;
+    display: block;
+    background: #FFF;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .93;
+}
+.screen {
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    border: 3px solid #3c763d;
+    background-color: #3c763d;
+    text-align: center;
+}
+
+.screen--top {
+    margin: 50px auto 30px;
+}
+
+.screen--bottom {
+    margin-top: 30px;
+}
+
+.screen span {
+    font-size: 20px
+}
+
+.floor-plan {
+    margin-top: 30px;
+}
+
+.floor-plan__color-description {
+    margin: 0 auto 10px;
+    width: 80%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.floor-plan__color-description-text {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+.floor-plan__row {
+    margin: auto;
+    width: 80%;
+    height: 35px;
+}
+.floor-plan__seat-row {
+    display: flex;
+    justify-content: center;
+}
+.row-name {
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .floor-plan {
+        overflow-x: scroll;
+    }
+    .floor-plan__seat-row {
+        justify-content: flex-start;
+    }
+}
+.house-info {
+  margin-top: 30px;
+}
+.seat {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 1px;
+    padding-top: 3px;
+    float: left;
+    background-color: #eee;
+    text-align: center;
+}
+
+.seat.seat--empty {
+    background-color: white;
+}
+
+.seat--0 {
+    background-color: #eee;
+}
+.seat--1 {
+    background-color: #F44336;
+}
+.seat--2 {
+    background-color: #EF9A9A;
+}
+.seat--3 {
+    background-color: #eee;
+}
+.seat--4 {
+    background-color: #A5D6A7;
+}
+.seat--5 {
+    background-color: #4CAF50;
+}
+
+.seat--disabled {
+    background-image: url('/img/ic_accessible_black_18px.svg');
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvZGV0YWlscy5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

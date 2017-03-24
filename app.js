@@ -15,16 +15,16 @@ const server_port = process.env.PORT || 8080;
 const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 const app = express();
 
-app.use(webpackDevMiddleware(webpack_compile,{
-	publicPath: '/',
-	noInfo: true,
-}));
-app.use(webpackHot(webpack_compile, {
-	noInfo: true,
-}));
+// app.use(webpackDevMiddleware(webpack_compile,{
+// 	publicPath: '/',
+// 	noInfo: true,
+// }));
+// app.use(webpackHot(webpack_compile, {
+// 	noInfo: true,
+// }));
 
-// app.use('/js', express.static('dist/js'));
-// app.use('/css', express.static('dist/css'));
+app.use('/js', express.static('dist/js'));
+app.use('/css', express.static('dist/css'));
 app.use('/img', express.static('public/img'));
 
 app.use(bodyParser.json({limit: 1024 * 1024 * 20})); // for parsing application/json 20MB
