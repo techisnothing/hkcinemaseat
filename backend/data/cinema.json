@@ -89,9 +89,9 @@
         "cinemaList": [
             {
                 "id": "cine-times",
+                "alias": "cti",
                 "name": "UA Cine Times",
                 "house": ["1", "2", "3", "4", "5"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
