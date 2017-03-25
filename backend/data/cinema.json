@@ -83,6 +83,7 @@
     },
     {
         "id": "ua",
+        "alias": "uax",
         "name": "UA",
         "numOfCinema": 6,
         "cinemaList": [
@@ -95,9 +96,9 @@
             },
             {
                 "id": "cine-moko",
+                "alias": "mok",
                 "name": "UA Cine Moko",
                 "house": ["1", "2", "3", "4", "IMAX"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
