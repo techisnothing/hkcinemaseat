@@ -103,9 +103,9 @@
             },
             {
                 "id": "isquare",
+                "alias": "isq",
                 "name": "UA iSQUARE",
                 "house": ["1", "2", "3", "IMAX", "Phoenix"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
