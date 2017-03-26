@@ -130,5 +130,85 @@
                 "regionCode": "NT"
             }
         ]
+    },
+    {
+        "id": "mcl",
+        "alias": "mcl",
+        "name": "MCL",
+        "numOfCinema": 9,
+        "cinemaList": [
+            {
+                "id": "jp",
+                "alias": "jpx",
+                "name": "MCL JP 銅鑼灣戲院",
+                "house": ["1", "2"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "tai-koo",
+                "alias": "tkx",
+                "name": "MCL 康怡戲院 (太古站)",
+                "house": [],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "south-horizons",
+                "alias": "shx",
+                "name": "MCL 海怡戲院",
+                "house": ["1", "2", "3"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "windsor",
+                "alias": "wsx",
+                "name": "皇室戲院",
+                "house": ["1", "2", "3"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "telford",
+                "alias": "tfx",
+                "name": "MCL 德福戲院",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "festival",
+                "alias": "fgx",
+                "name": "FESTIVAL GRAND CINEMA",
+                "house": ["1", "2", "3", "4", "5", "6", "7", "Suite"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "star",
+                "alias": "sta",
+                "name": "STAR CINEMA",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
+                "regionCode": "NT"
+            },
+            {
+                "id": "metro-city",
+                "alias": "mcx",
+                "name": "MCL 新都城戲院",
+                "house": ["1", "2", "3", "4", "5", "6", "7"],
+                "disable": true,
+                "regionCode": "NT"
+            },
+            {
+                "id": "fanling",
+                "alias": "flx",
+                "name": "MCL 粉嶺戲院",
+                "house": ["1", "2", "3"],
+                "disable": true,
+                "regionCode": "NT"
+            }
+        ]
     }
 ]
