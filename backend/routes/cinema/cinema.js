@@ -78,7 +78,7 @@ route.get('/:brandname/:venue',(req, res) => {
 route.get('/:brandname/:venue/:house',(req, res) => {
 	//TODO: sanitization
 	let {brandname, venue, house} = req.params;
-	[brandname, venue, house] = _.map([brandname, venue, house], _.toLower);
+	[brandname, venue] = _.map([brandname, venue], _.toLower);
 
 	let brand = _.find(cinema_data, {id: brandname});
 	let cinema = _.find(_.get(brand, 'cinemaList'), {id: venue});
