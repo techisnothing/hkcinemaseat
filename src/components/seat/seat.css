@@ -3,10 +3,10 @@
     width: 30px;
     height: 30px;
     margin: 0 1px;
-    padding-top: 3px;
     float: left;
     background-color: #eee;
     text-align: center;
+    line-height: 30px;
 }
 
 .seat.seat--empty {
