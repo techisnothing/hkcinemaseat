@@ -41,7 +41,7 @@ new Vue({
 				return {
 					id: house_id,
 					name: `House ${house_id}`,
-					url: `/${this.brand}/${this.venue}/${house_id}`
+					url: `/${this.brand}/${this.venue}/${_.toLower(house_id)}`
 				};
 			});
 		}
