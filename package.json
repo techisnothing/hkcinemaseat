@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app --harmony-destructing",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./node_modules/webpack/bin/webpack"
+    "build": "node ./node_modules/webpack/bin/webpack",
+    "heroku-prebuild": "node ./node_modules/webpack/bin/webpack --config ./webpack.config.prod.js --progress"
   },
   "repository": {
     "type": "git",
