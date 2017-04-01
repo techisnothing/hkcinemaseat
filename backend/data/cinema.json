@@ -116,6 +116,7 @@
                 "alias": "tmt",
                 "name": "UA 屯門市廣場",
                 "house": ["1", "2", "3", "4"],
+                "disable": true,
                 "regionCode": "NT"
             },
             {
