@@ -7,8 +7,8 @@ const Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
 
-const cinema_dirs = ['cinematheque', 'cyberport'];
-const data_path = path.resolve(__dirname, '../', 'backend/data','broadway');
+const cinema_dirs = ['cine-moko', 'cine-times', 'isquare','megabox'];
+const data_path = path.resolve(__dirname, '../', 'backend/data','ua');
 
 
 const filename_in_dir = (dirname)=>{
@@ -27,9 +27,10 @@ const displacement = (x1, y1, x2, y2) => {
 };
 
 // sear Mean Square Error
-const seat_mse = (max_row, max_col, row, col) => {
+const seat_mse = (screenpos, max_row, max_col, row, col) => {
+	let offset = screenpos === 'bottom' ? - max_row * 0.16 : max_row * 0.16;
 	//default range 0 to 1
-	let mid_row = max_row /2 - max_row * 0.16;
+	let mid_row = max_row /2 + offset;
 	let mid_col = max_col /2;
 	let sqrt_diff = displacement(row,col, mid_row, mid_col);
 	let max_diff = Math.sqrt((mid_col * mid_col) + (mid_row) * (mid_row)) || 1;
@@ -58,7 +59,8 @@ const transforn_score_domain = (mse) =>{
 const add_cinema_score_data = (cinema_data)=>{
 	let max_row = cinema_data.rows.length;
 	let max_col = _.get(cinema_data, 'rows.0.columns.length');
-	let unique_seat_mse = _.curry(seat_mse)(max_row, max_col);
+	let screenpos = _.get(cinema_data, 'screenPos');
+	let unique_seat_mse = _.curry(seat_mse)(screenpos, max_row, max_col);
 
 	let new_cinema_data = _.clone(cinema_data);
 	new_cinema_data.rows = _.map(cinema_data.rows, (row, row_id)=>{
@@ -93,6 +95,9 @@ Promise.map(cinema_dirs, (dirs)=>{
 	});
 })
 .then(_.flatten)
+.filter(({json_file})=>{
+	return json_file.length !== 0;
+})
 .map(({filename, json_file})=>{
 	return {filename, cinema_data: JSON.parse(json_file)};
 })

@@ -17,7 +17,6 @@
                 "alias": "cbp",
                 "name": "百老匯 數碼港",
                 "house": ["1", "2", "3", "4"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
@@ -25,7 +24,6 @@
                 "alias": "hlw",
                 "name": "百老匯 荷里活",
                 "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -33,7 +31,6 @@
                 "alias": "one",
                 "name": "百老匯 The ONE",
                 "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -41,7 +38,6 @@
                 "alias": "que",
                 "name": "百老匯電影中心",
                 "house": ["1", "2", "3", "4"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
