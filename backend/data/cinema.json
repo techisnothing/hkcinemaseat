@@ -120,9 +120,9 @@
             },
             {
                 "id": "airport",
+                "alias": "apx",
                 "name": "UA 機場IMAX",
                 "house": ["IMAX"],
-                "disable": true,
                 "regionCode": "NT"
             }
         ]
