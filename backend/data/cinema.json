@@ -17,7 +17,6 @@
                 "alias": "cbp",
                 "name": "百老匯 數碼港",
                 "house": ["1", "2", "3", "4"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
@@ -25,7 +24,6 @@
                 "alias": "hlw",
                 "name": "百老匯 荷里活",
                 "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -33,7 +31,6 @@
                 "alias": "one",
                 "name": "百老匯 The ONE",
                 "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -41,7 +38,6 @@
                 "alias": "que",
                 "name": "百老匯電影中心",
                 "house": ["1", "2", "3", "4"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
@@ -83,39 +79,41 @@
     },
     {
         "id": "ua",
+        "alias": "uax",
         "name": "UA",
         "numOfCinema": 6,
         "cinemaList": [
             {
                 "id": "cine-times",
+                "alias": "cti",
                 "name": "UA Cine Times",
                 "house": ["1", "2", "3", "4", "5"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
                 "id": "cine-moko",
+                "alias": "mok",
                 "name": "UA Cine Moko",
                 "house": ["1", "2", "3", "4", "IMAX"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "isquare",
+                "alias": "isq",
                 "name": "UA iSQUARE",
                 "house": ["1", "2", "3", "IMAX", "Phoenix"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
                 "id": "megabox",
+                "alias": "mgb",
                 "name": "UA MegaBox",
-                "house": ["1", "2", "3", "4", "5", "6", "IMAX"],
-                "disable": true,
+                "house": ["1", "5", "6", "IMAX"],
                 "regionCode": "KLN"
             },
             {
                 "id": "tmtplaza",
+                "alias": "tmt",
                 "name": "UA 屯門市廣場",
                 "house": ["1", "2", "3", "4"],
                 "disable": true,
@@ -123,8 +121,88 @@
             },
             {
                 "id": "airport",
+                "alias": "apx",
                 "name": "UA 機場IMAX",
                 "house": ["IMAX"],
+                "regionCode": "NT"
+            }
+        ]
+    },
+    {
+        "id": "mcl",
+        "alias": "mcl",
+        "name": "MCL",
+        "numOfCinema": 9,
+        "cinemaList": [
+            {
+                "id": "jp",
+                "alias": "jpx",
+                "name": "MCL JP 銅鑼灣戲院",
+                "house": ["1", "2"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "tai-koo",
+                "alias": "tkx",
+                "name": "MCL 康怡戲院 (太古站)",
+                "house": [],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "south-horizons",
+                "alias": "shx",
+                "name": "MCL 海怡戲院",
+                "house": ["1", "2", "3"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "windsor",
+                "alias": "wsx",
+                "name": "皇室戲院",
+                "house": ["1", "2", "3"],
+                "disable": true,
+                "regionCode": "HK"
+            },
+            {
+                "id": "telford",
+                "alias": "tfx",
+                "name": "MCL 德福戲院",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "festival",
+                "alias": "fgx",
+                "name": "FESTIVAL GRAND CINEMA",
+                "house": ["1", "2", "3", "4", "5", "6", "7", "Suite"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "star",
+                "alias": "sta",
+                "name": "STAR CINEMA",
+                "house": ["1", "2", "3", "4", "5", "6"],
+                "disable": true,
+                "regionCode": "NT"
+            },
+            {
+                "id": "metro-city",
+                "alias": "mcx",
+                "name": "MCL 新都城戲院",
+                "house": ["1", "2", "3", "4", "5", "6", "7"],
+                "disable": true,
+                "regionCode": "NT"
+            },
+            {
+                "id": "fanling",
+                "alias": "flx",
+                "name": "MCL 粉嶺戲院",
+                "house": ["1", "2", "3"],
                 "disable": true,
                 "regionCode": "NT"
             }
