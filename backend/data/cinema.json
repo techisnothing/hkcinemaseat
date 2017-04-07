@@ -139,7 +139,6 @@
                 "alias": "jpx",
                 "name": "MCL JP 銅鑼灣戲院",
                 "house": ["1", "2"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
