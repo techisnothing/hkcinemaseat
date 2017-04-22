@@ -145,8 +145,7 @@
                 "id": "tai-koo",
                 "alias": "tkx",
                 "name": "MCL 康怡戲院 (太古站)",
-                "house": [],
-                "disable": true,
+                "house": ["1", "2", "3", "4", "5"],
                 "regionCode": "HK"
             },
             {
