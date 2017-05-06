@@ -160,7 +160,6 @@
                 "alias": "wsx",
                 "name": "皇室戲院",
                 "house": ["1", "2", "3"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
