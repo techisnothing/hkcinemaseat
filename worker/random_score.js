@@ -7,7 +7,7 @@ const Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
 
-const cinema_dirs = ['metro-city'];
+const cinema_dirs = ['south-horizons', 'windsor', 'telford', 'festival', 'star'];
 const data_path = path.resolve(__dirname, '../', 'backend/data','mcl');
 
 
