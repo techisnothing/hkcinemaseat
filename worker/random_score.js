@@ -7,8 +7,8 @@ const Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
 
-const cinema_dirs = ['cine-moko', 'cine-times', 'isquare','megabox'];
-const data_path = path.resolve(__dirname, '../', 'backend/data','ua');
+const cinema_dirs = ['tai-koo', 'jp'];
+const data_path = path.resolve(__dirname, '../', 'backend/data','mcl');
 
 
 const filename_in_dir = (dirname)=>{
