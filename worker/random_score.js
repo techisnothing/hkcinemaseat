@@ -7,8 +7,8 @@ const Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
 
-const cinema_dirs = ['tai-koo', 'jp'];
-const data_path = path.resolve(__dirname, '../', 'backend/data','mcl');
+const cinema_dirs = ['tmtplaza'];
+const data_path = path.resolve(__dirname, '../', 'backend/data','ua');
 
 
 const filename_in_dir = (dirname)=>{
@@ -58,7 +58,8 @@ const transforn_score_domain = (mse) =>{
 
 const add_cinema_score_data = (cinema_data)=>{
 	let max_row = cinema_data.rows.length;
-	let max_col = _.get(cinema_data, 'rows.0.columns.length');
+	let max_col = _.max(_.map( _.range(max_row), (num)=> _.get(cinema_data, `rows.${num}.columns.length`)) );
+
 	let screenpos = _.get(cinema_data, 'screenPos');
 	let unique_seat_mse = _.curry(seat_mse)(screenpos, max_row, max_col);
 
