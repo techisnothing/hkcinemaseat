@@ -153,7 +153,6 @@
                 "alias": "shx",
                 "name": "MCL 海怡戲院",
                 "house": ["1", "2", "3"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
