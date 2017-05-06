@@ -200,5 +200,61 @@
                 "regionCode": "NT"
             }
         ]
+    },
+    {
+        "id": "gh",
+        "alias": "gh",
+        "name": "嘉禾",
+        "numOfCinema": 6,
+        "cinemaList": [
+            {
+                "id": "ocean",
+                "alias": "gox",
+                "name": "嘉禾 海運戲院",
+                "house": ["1"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "tsing-yi",
+                "alias": "tyx",
+                "name": "嘉禾 青衣",
+                "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
+                "regionCode": "NT"
+            },
+            {
+                "id": "citywalk",
+                "alias": "cwx",
+                "name": "嘉禾 荃新天地",
+                "house": ["1", "2", "3", "4", "5"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "whampoa",
+                "alias": "wpx",
+                "name": "嘉禾 黃埔",
+                "house": ["1", "2", "3", "4"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "fanling",
+                "alias": "flx",
+                "name": "嘉禾 粉嶺",
+                "house": ["1", "2"],
+                "disable": true,
+                "regionCode": "KLN"
+            },
+            {
+                "id": "the-sky",
+                "alias": "tsx",
+                "name": "嘉禾 the sky (奧海城)",
+                "house": ["1", "2", "3", "5", "6", "Vivo"],
+                "disable": true,
+                "regionCode": "KLN"
+            }
+        ]
     }
 ]
