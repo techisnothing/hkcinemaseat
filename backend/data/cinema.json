@@ -166,8 +166,7 @@
                 "id": "telford",
                 "alias": "tfx",
                 "name": "MCL 德福戲院",
-                "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
+                "house": ["1", "4", "5", "6"],
                 "regionCode": "KLN"
             },
             {
