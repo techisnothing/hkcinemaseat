@@ -192,7 +192,6 @@
                 "alias": "mcx",
                 "name": "MCL 新都城戲院",
                 "house": ["1", "2", "3", "4", "5", "6", "7"],
-                "disable": true,
                 "regionCode": "NT"
             },
             {

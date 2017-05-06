@@ -7,8 +7,8 @@ const Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
 
-const cinema_dirs = ['tmtplaza'];
-const data_path = path.resolve(__dirname, '../', 'backend/data','ua');
+const cinema_dirs = ['metro-city'];
+const data_path = path.resolve(__dirname, '../', 'backend/data','mcl');
 
 
 const filename_in_dir = (dirname)=>{
@@ -99,8 +99,19 @@ Promise.map(cinema_dirs, (dirs)=>{
 .filter(({json_file})=>{
 	return json_file.length !== 0;
 })
+.filter(({filename})=>{
+	return path.extname(filename) === '.json';
+})
 .map(({filename, json_file})=>{
-	return {filename, cinema_data: JSON.parse(json_file)};
+	let cinema_data;
+	try{
+		cinema_data = JSON.parse(json_file);
+
+	}catch(e){
+		console.log(filename);
+		throw new Error(filename + 'pares error');
+	}
+	return {filename, cinema_data};
 })
 .map(({filename, cinema_data})=>{
 	return {filename, data: add_cinema_score_data(cinema_data)};
