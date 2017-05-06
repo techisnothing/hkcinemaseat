@@ -195,7 +195,6 @@
                 "alias": "flx",
                 "name": "MCL 粉嶺戲院",
                 "house": ["1", "2", "3"],
-                "disable": true,
                 "regionCode": "NT"
             }
         ]
