@@ -242,7 +242,6 @@
                 "alias": "flx",
                 "name": "嘉禾 粉嶺",
                 "house": ["1", "2"],
-                "disable": true,
                 "regionCode": "NT"
             },
             {
