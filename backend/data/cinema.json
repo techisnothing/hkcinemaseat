@@ -227,7 +227,7 @@
                 "name": "嘉禾 荃新天地",
                 "house": ["1", "2", "3", "4", "5"],
                 "disable": true,
-                "regionCode": "KLN"
+                "regionCode": "NT"
             },
             {
                 "id": "whampoa",
@@ -243,7 +243,7 @@
                 "name": "嘉禾 粉嶺",
                 "house": ["1", "2"],
                 "disable": true,
-                "regionCode": "KLN"
+                "regionCode": "NT"
             },
             {
                 "id": "the-sky",
