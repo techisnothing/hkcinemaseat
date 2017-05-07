@@ -249,7 +249,6 @@
                 "alias": "tsx",
                 "name": "嘉禾 the sky (奧海城)",
                 "house": ["1", "2", "3", "5", "6", "Vivo"],
-                "disable": true,
                 "regionCode": "KLN"
             }
         ]
