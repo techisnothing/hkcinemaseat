@@ -7,6 +7,10 @@
             "name": "A",
             "columns": [
                 {
+                    "seat": "01",
+                    "score": 1
+                },
+                {
                     "seat": "02",
                     "score": 1
                 },
@@ -61,10 +65,6 @@
                 {
                     "seat": "15",
                     "score": 1
-                },
-                {
-                    "seat": null,
-                    "score": null
                 },
                 {
                     "seat": null,
