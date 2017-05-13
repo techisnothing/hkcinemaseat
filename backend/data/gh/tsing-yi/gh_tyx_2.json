@@ -1,7 +1,7 @@
 {
   "screenPos": "top",
-  "numOfSeats": 150,
-  "house": "1",
+  "numOfSeats": 164,
+  "house": "2",
   "rows": [
     {
       "name": "",
@@ -71,11 +71,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -144,11 +144,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -217,11 +217,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -290,11 +290,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -363,11 +363,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -436,11 +436,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -509,11 +509,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -582,11 +582,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -655,11 +655,11 @@
           "score": null
         },
         {
-          "seat": "14",
+          "seat": "13",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "14",
           "score": 0
         },
         {
@@ -712,27 +712,27 @@
           "score": 0
         },
         {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": "14",
+          "seat": "10",
           "score": 0
         },
         {
-          "seat": "15",
+          "seat": "11",
+          "score": 0
+        },
+        {
+          "seat": "12",
+          "score": 0
+        },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": "13",
+          "score": 0
+        },
+        {
+          "seat": "14",
           "score": 0
         },
         {
@@ -757,8 +757,8 @@
           "score": null
         },
         {
-          "seat": "03",
-          "score": 0
+          "seat": null,
+          "score": null
         },
         {
           "seat": "04",
@@ -777,24 +777,28 @@
           "score": 0
         },
         {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": null,
-          "score": null
-        },
-        {
-          "seat": "12",
+          "seat": "08",
           "score": 0
+        },
+        {
+          "seat": "09",
+          "score": 0
+        },
+        {
+          "seat": "10",
+          "score": 0
+        },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": null,
+          "score": null
         },
         {
           "seat": "13",
@@ -802,10 +806,6 @@
         },
         {
           "seat": "14",
-          "score": 0
-        },
-        {
-          "seat": "15",
           "score": 0
         },
         {
@@ -830,12 +830,12 @@
           "score": null
         },
         {
-          "seat": "03",
-          "score": 0
+          "seat": null,
+          "score": null
         },
         {
-          "seat": "04",
-          "score": 0
+          "seat": null,
+          "score": null
         },
         {
           "seat": "05",
@@ -850,9 +850,46 @@
           "score": 0
         },
         {
+          "seat": "08",
+          "score": 0
+        },
+        {
+          "seat": "09",
+          "score": 0
+        },
+        {
+          "seat": "10",
+          "score": 0
+        },
+        {
           "seat": null,
           "score": null
         },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": "13",
+          "score": 0
+        },
+        {
+          "seat": "14",
+          "score": 0
+        },
+        {
+          "seat": null,
+          "score": null
+        }
+      ]
+    },
+    {
+      "name": "M",
+      "columns": [
         {
           "seat": null,
           "score": null
@@ -874,12 +911,48 @@
           "score": null
         },
         {
+          "seat": "05",
+          "score": 0
+        },
+        {
+          "seat": "06",
+          "score": 0
+        },
+        {
+          "seat": "07",
+          "score": 0
+        },
+        {
+          "seat": "08",
+          "score": 0
+        },
+        {
+          "seat": "09",
+          "score": 0
+        },
+        {
+          "seat": "10",
+          "score": 0
+        },
+        {
           "seat": null,
           "score": null
         },
         {
           "seat": null,
           "score": null
+        },
+        {
+          "seat": null,
+          "score": null
+        },
+        {
+          "seat": "13",
+          "score": 0
+        },
+        {
+          "seat": "14",
+          "score": 0
         },
         {
           "seat": null,
