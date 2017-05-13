@@ -225,7 +225,6 @@
                 "alias": "cwx",
                 "name": "嘉禾 荃新天地",
                 "house": ["1", "2", "3", "4", "5"],
-                "disable": true,
                 "regionCode": "NT"
             },
             {
