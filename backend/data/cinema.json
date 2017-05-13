@@ -217,7 +217,6 @@
                 "alias": "tyx",
                 "name": "嘉禾 青衣",
                 "house": ["1", "2", "3", "4", "5"],
-                "disable": true,
                 "regionCode": "NT"
             },
             {
