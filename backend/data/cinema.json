@@ -233,7 +233,6 @@
                 "alias": "wpx",
                 "name": "嘉禾 黃埔",
                 "house": ["1", "2", "3", "4"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
