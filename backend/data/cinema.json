@@ -210,7 +210,6 @@
                 "alias": "gox",
                 "name": "嘉禾 海運戲院",
                 "house": ["1"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
