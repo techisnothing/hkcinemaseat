@@ -16,27 +16,27 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": null,
@@ -93,27 +93,27 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "disabled",
@@ -145,11 +145,11 @@
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": null,
@@ -170,39 +170,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": null,
@@ -210,27 +210,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": null,
@@ -247,39 +247,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 1
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": null,
@@ -287,27 +287,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": null,
@@ -324,39 +324,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": null,
@@ -364,27 +364,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": null,
@@ -401,39 +401,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -441,27 +441,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": null,
@@ -478,39 +478,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -518,27 +518,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -555,39 +555,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": null,
@@ -595,27 +595,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -632,39 +632,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": null,
@@ -672,27 +672,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -709,39 +709,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": null,
@@ -749,27 +749,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -786,39 +786,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": null,
@@ -826,27 +826,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 5
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -863,39 +863,39 @@
             "columns": [
                 {
                     "seat": "01",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -903,27 +903,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -948,31 +948,31 @@
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": null,
@@ -980,27 +980,27 @@
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 4
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": null,
@@ -1021,63 +1021,63 @@
                 },
                 {
                     "seat": "02",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "03",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "04",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": "05",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "06",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "07",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "08",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "09",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "10",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "11",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "12",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "13",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "14",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "15",
-                    "score": 0
+                    "score": 3
                 },
                 {
                     "seat": "16",
-                    "score": 0
+                    "score": 2
                 },
                 {
                     "seat": null,
