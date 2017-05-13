@@ -17,3 +17,11 @@
     left: 0;
     opacity: .93;
 }
+
+.breadcrumb {
+    background-color: white;
+}
+
+.breadcrumb>.active {
+    color: black;
+}
