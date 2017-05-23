@@ -6,9 +6,14 @@ const Promise = require('bluebird');
 
 Promise.promisifyAll(fs);
 
+if (process.argv.length < 4) {
+    console.log('Usage: node random_score.js [brand] [cinemas]');
+    process.exit();
+}
 
-const cinema_dirs = ['tsing-yi','citywalk'];
-const data_path = path.resolve(__dirname, '../', 'backend/data','gh');
+const BRAND = process.argv[2];
+const cinema_dirs = process.argv.slice(3);
+const data_path = path.resolve(__dirname, '../', 'backend/data',BRAND);
 
 
 const filename_in_dir = (dirname)=>{
@@ -125,7 +130,3 @@ Promise.map(cinema_dirs, (dirs)=>{
 .finally(()=>{
 	process.exit();
 });
-
-
-
-
