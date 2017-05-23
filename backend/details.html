@@ -18,14 +18,9 @@
                 </div>
             </nav>
             <div class="container">
-                <h2>
-                    <ol class="breadcrumb">
-                        <li><a href="/">戲院列表</a></li>
-                        <li class="active">{{ cinemainfo.name || brand }}</li>
-                    </ol>
-                </h2>
+                <router-view></router-view>
             </div>
-            <house-info :plan="plan" :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="on_floor_plan_change"></house-info>
+
         </div>
     </body>
     <script src="/js/details.js"></script>

@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import _ from 'lodash';
 import './floor-plan.css';
 import template from './floor-plan.html';
 
@@ -18,5 +19,5 @@ Vue.component('floor-plan', {
 
 			return 31 * _.maxBy(this.plan.rows, (row) => row.columns.length).columns.length;
 		}
-}
+	}
 });

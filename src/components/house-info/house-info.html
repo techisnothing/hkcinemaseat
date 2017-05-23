@@ -1,4 +1,12 @@
-<div class="house-info container">
-	<tab :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="onHouseChange"></tab>
-	<floor-plan :plan="plan"></floor-plan>
+<div>
+	<h2>
+        <ol class="breadcrumb">
+            <li><a href="/">戲院列表</a></li>
+            <li class="active">{{ cinemainfo.name }}</li>
+        </ol>
+    </h2>
+	<div class="house-info container">
+		<tab :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="onHouseChange"></tab>
+		<floor-plan :plan="seatplan"></floor-plan>
+	</div>
 </div>
