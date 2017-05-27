@@ -1,10 +1,14 @@
 .screen {
     margin: auto;
+}
+
+.screen-holder {
     width: 80%;
     height: 35px;
     border: 3px solid #3c763d;
     background-color: #3c763d;
     text-align: center;
+    margin: auto;
 }
 
 .screen--top {
@@ -27,11 +31,14 @@
     margin: 0 auto 10px;
     width: 80%;
     height: 35px;
-    display: flex;
-    justify-content: flex-end;
+}
+
+.floor-plan__color-description-seat.seat {
+    float: right;
 }
 
 .floor-plan__color-description-text {
+    float: right;
     height: 30px;
     line-height: 30px;
     margin: 0 5px;
@@ -39,12 +46,9 @@
 
 .floor-plan__row {
     margin: auto;
-    width: 80%;
     height: 35px;
 }
 .floor-plan__seat-row {
-    display: flex;
-    justify-content: center;
     margin: auto;
     height: 35px;
 }
@@ -56,23 +60,18 @@
     line-height: 30px;
 }
 
+.row-holder {
+    margin: auto;
+}
 
 @media (max-width: 768px) {
+    .floor-plan__color-description {
+        width: 90%;
+    }
     .floor-plan {
         overflow-x: scroll;
     }
-    .floor-plan__row {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        left: 35px;
-
-    }
     .floor-plan__seat-row {
         display: block;
-    }
-    .screen {
-        position: relative;
-        left: 30px;
     }
 }
