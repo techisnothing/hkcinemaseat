@@ -17,7 +17,7 @@ Vue.component('floor-plan', {
 				return 0;
 			}
 
-			return 31 * _.maxBy(this.plan.rows, (row) => row.columns.length).columns.length;
+			return 32 * (_.maxBy(this.plan.rows, (row) => row.columns.length).columns.length + 1);
 		}
 	}
 });

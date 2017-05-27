@@ -1,23 +1,28 @@
 <div class="floor-plan">
 	<div class="floor-plan__color-description">
-		<span class="floor-plan__color-description-text"> 最好 </span>
-		<seat :seat-param="{seat: n, score:n}" v-for="n in [5,4,3,2,1]"></seat>
 		<span class="floor-plan__color-description-text"> 最差 </span>
+		<seat class="floor-plan__color-description-seat" :seat-param="{seat: n, score:n}" v-for="n in [1,2,3,4,5]"></seat>
+		<span class="floor-plan__color-description-text"> 最好 </span>
 	</div>
-	<div class="screen screen--top" :style="{width: screenWidth + 'px'}" v-if="plan.screenPos === 'top'">
-		<span>Screen</span>
+
+	<div class="screen screen--top" :style="`width: ${screenWidth}px`" v-if="plan.screenPos === 'top'">
+		<div class="screen-holder">
+			<span>Screen</span>
+		</div>
 	</div>
-	<template v-for="row in plan.rows">
+	<div v-for="row in plan.rows" class="row-holder" :style="`width: ${screenWidth}px`">
 		<span class="row-name">{{row.name}}</span>
 		<div class="floor-plan__row">
-			<div class="floor-plan__seat-row" :style="`width: ${screenWidth + 100}px`">
-			<span v-for="col in row.columns">
-				<seat :seat-param="col"></seat>
-			</span>
+			<div class="floor-plan__seat-row" :style="`width: ${screenWidth}px`">
+				<span v-for="col in row.columns">
+					<seat :seat-param="col"></seat>
+				</span>
 			</div>
 		</div>
-	</template>
-	<div class="screen screen--bottom" :style="`width: ${screenWidth + 100}px`" v-if="plan.screenPos === 'bottom'">
-		<span>Screen</span>
+	</div>
+	<div class="screen screen--bottom" :style="`width: ${screenWidth}px`" v-if="plan.screenPos === 'bottom'">
+		<div class="screen-holder">
+			<span>Screen</span>
+		</div>
 	</div>
 </div>
