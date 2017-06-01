@@ -14,8 +14,11 @@ const HouseInfo = Vue.extend({
 		this.brand = brand;
 		this.venue = venue;
 
-		this.fetch_house_list(brand, venue);
-		this.fetch_seat_plan(brand, venue, house);
+		this.fetch_house_list(brand, venue)
+			.then(()=>{
+				this.$router.replace({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: this.houses[0].id}});
+				this.currenthouse = this.houses[0].id;
+			});
 	},
 	data(){
 		return {
@@ -25,9 +28,8 @@ const HouseInfo = Vue.extend({
 	},
 	watch:{
 		'$route': function(){
-			let {brand, venue, house} = this.$route.params;
+			let {brand, venue} = this.$route.params;
 			this.fetch_house_list(brand, venue);
-			this.fetch_seat_plan(brand, venue, house);
 		}
 	},
 	computed: {
@@ -41,29 +43,19 @@ const HouseInfo = Vue.extend({
 					url: `/${this.brand}/${this.venue}/${house_id}`
 				};
 			});
-		},
-		seatplan(){
-			return this.plan || {};
 		}
 	},
 	methods:{
 		fetch_house_list(brand, venue){
 			let dist_url = `/api/cinema/${brand}/${venue}`;
-			this.$http.get(dist_url).then(({body: info})=>{
+			return this.$http.get(dist_url).then(({body: info})=>{
 				this.cinemainfo = info;
 			});
 		},
 		onHouseChange(house_id){
-
-			this.$router.push({name: 'house_detail', params:{brand: this.brand, venue: this.venue, house: house_id}});
+			this.$router.push({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: house_id}});
+			this.currenthouse = house_id;
 		},
-		fetch_seat_plan(brand, venue, house){
-			let dist_url = `/api/cinema/${brand}/${venue}/${house}`;
-			return this.$http.get(dist_url).then(({body: plan})=>{
-				this.plan = plan;
-				this.currenthouse = house;
-			});
-		}
 	}
 });
 
