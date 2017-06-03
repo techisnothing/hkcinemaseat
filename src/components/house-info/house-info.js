@@ -17,7 +17,7 @@ const HouseInfo = Vue.extend({
 		this.fetch_house_list(brand, venue)
 			.then(()=>{
 				this.$router.replace({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: this.houses[0].id}});
-				this.currenthouse = this.houses[0].id;
+				this.currenthouse = _.find(this.houses, {id: this.currenthouse}) ? this.currenthouse : this.houses[0].id;
 			});
 	},
 	data(){
@@ -28,8 +28,8 @@ const HouseInfo = Vue.extend({
 	},
 	watch:{
 		'$route': function(){
-			let {brand, venue} = this.$route.params;
-			this.fetch_house_list(brand, venue);
+			let {house} = this.$route.params;
+			this.currenthouse = house;
 		}
 	},
 	computed: {
@@ -51,11 +51,7 @@ const HouseInfo = Vue.extend({
 			return this.$http.get(dist_url).then(({body: info})=>{
 				this.cinemainfo = info;
 			});
-		},
-		onHouseChange(house_id){
-			this.$router.push({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: house_id}});
-			this.currenthouse = house_id;
-		},
+		}
 	}
 });
 

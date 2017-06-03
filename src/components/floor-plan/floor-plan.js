@@ -8,9 +8,6 @@ const FloorPlan = Vue.extend({
 	template,
 	created(){
 		let {brand, venue, house} = this.$route.params;
-		this.currenthouse = house;
-		this.brand = brand;
-		this.venue = venue;
 
 		this.fetch_seat_plan(brand, venue, house);
 	},
