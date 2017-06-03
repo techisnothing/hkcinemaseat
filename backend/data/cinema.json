@@ -7,9 +7,9 @@
         "cinemaList": [
             {
                 "id": "palace-ifc",
+                "alias": "ifc",
                 "name": "百老匯 PALACE ifc",
                 "house": ["1", "2", "3", "4", "5"],
-                "disable": true,
                 "regionCode": "HK"
             },
             {
