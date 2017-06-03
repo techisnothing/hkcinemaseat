@@ -7,6 +7,6 @@
     </h2>
 	<div class="house-info container">
 		<tab :houses="houses" :currenthouse="currenthouse" v-on:floorplan-change="onHouseChange"></tab>
-		<floor-plan :plan="seatplan"></floor-plan>
+		<router-view></router-view>
 	</div>
 </div>
