@@ -58,10 +58,13 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
+    position: absolute;
+    left: -30px;
 }
 
 .row-holder {
     margin: auto;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -73,5 +76,9 @@
     }
     .floor-plan__seat-row {
         display: block;
+    }
+    .row-name {
+        position: relative;
+        left: 0px;
     }
 }
