@@ -11,7 +11,7 @@ then
 fi
 
 echo 'Excuting revert_screen.js ...'
-node revert_screen.js $@
+node $(dirname $0)/revert_screen.js $@
 
 echo 'Excuting random_score.js ...'
-node random_score.js $@
+node $(dirname $0)/random_score.js $@
