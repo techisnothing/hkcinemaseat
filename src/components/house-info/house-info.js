@@ -16,8 +16,9 @@ const HouseInfo = Vue.extend({
 
 		this.fetch_house_list(brand, venue)
 			.then(()=>{
-				this.$router.replace({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: this.houses[0].id}});
 				this.currenthouse = _.find(this.houses, {id: this.currenthouse}) ? this.currenthouse : this.houses[0].id;
+				this.$router.replace({name: 'house_plan', params:{brand: this.brand, venue: this.venue, house: this.currenthouse}});
+
 			});
 	},
 	data(){
