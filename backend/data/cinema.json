@@ -49,9 +49,9 @@
             },
             {
                 "id": "palace-apm",
+                "alias": "apm",
                 "name": "百老匯 PALACE apm",
                 "house": ["1", "2", "3", "4", "5", "6"],
-                "disable": true,
                 "regionCode": "KLN"
             },
             {
